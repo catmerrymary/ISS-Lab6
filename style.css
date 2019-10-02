@@ -11,10 +11,12 @@
 #center {
   text-align: center;
 }
-
+#map-shell {
+    display: inline-block;
+}
 #iss-map {
     height: 400px;
     width: 1000px;
     margin: 50px;
-    align: center;
+    text-align: center;
       }

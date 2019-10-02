@@ -12,6 +12,12 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: 'pk.eyJ1IjoiY2F0bWVycnltYXJ5IiwiYSI6ImNrMHk4cW5oaDAxamczbnQ5aG45ZXIyaWQifQ.NCnvhtPsLrzCNygUatdGaw'
 }).addTo(map)
 
+let icon = L.icon({
+    iconUrl: 'noun_Satellite_956262-1.png',
+    iconSize: [50,50],
+    iconAnchor: [25,25]
+
+})
 iss() //initial call to function
 setInterval(iss, update) // call the iss function every update seconds
 function iss() {
@@ -25,7 +31,7 @@ function iss() {
             issLong.innerHTML = long
             time.innerHTML = Date()
             if (!issMarker) {
-                issMarker = L.marker([lat, long]).addTo(map)
+                issMarker = L.marker([lat, long],{icon:icon}).addTo(map)
             } else {
                 issMarker.setLatLng([lat, long]) //already exists -move to new location
             }

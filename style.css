@@ -2,6 +2,8 @@
     margin: 50px;
     border: 2px solid blue;
     background-color: #d9f3ff;
+    text-align: center;
+    padding-left: 50px;
 }
 
 #iss-map {

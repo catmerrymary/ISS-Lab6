@@ -1,13 +1,20 @@
 #brdr {
+    display: inline-block;
+    width: 900px;
     margin: 50px;
     border: 2px solid blue;
     background-color: #d9f3ff;
     text-align: center;
     padding-left: 50px;
+
+}
+#center {
+  text-align: center;
 }
 
 #iss-map {
     height: 400px;
     width: 1000px;
     margin: 50px;
+    align: center;
       }
